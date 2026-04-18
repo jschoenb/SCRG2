@@ -1,0 +1,17 @@
+body {
+	font-family: Georgia, Times, serif;
+	font-size: 11px;
+	line-height: 200%;
+	background-color: #222222;
+	color: white;
+}
+
+h1 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+a {
+	color: white;
+}
+

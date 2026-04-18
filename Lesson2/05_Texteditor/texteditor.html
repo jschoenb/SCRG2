@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JavaScript Texteditor</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+
+<body>
+	<h1>JavaScript Texteditor</h1>
+	<strong>Elemente hinzuf&uuml;gen</strong>
+	
+	<form name="texteditorForm" action="#">
+		<select name="typ" size="1">
+			<option value="H1">&Uuml;berschrift 1</option>
+			<option value="H2">&Uuml;berschrift 2</option>
+			<option value="H3">&Uuml;berschrift 3</option>
+			<option value="P">Textabsatz</option>
+			<option value="HR">Trennlinie</option>
+		</select>
+		
+		<input type="text" name="content" size="50" />
+		<input id="add" type="button" value="Add" />
+		<input id="remove" type="button" value="Remove" />
+		<input id="removeall" type="button" value="Remove all" />
+	</form>
+	
+	<div id="textarea"></div>
+</body>
+</html>
+
+
+

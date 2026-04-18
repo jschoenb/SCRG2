@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Images</title>
+			<link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+    </head>
+    <body>
+		<form action="#" method="get">
+		<fieldset>
+			<label for="width">Width: </label>
+			<input type="text" name="width" id="width" />
+			<button id="resize">
+				Resize
+			</button>
+			<button id="reset">
+				Reset
+			</button>
+			<br />
+			<label for="pic">Pic #: </label>
+			<input type="text" name="pic" id="pic" />
+			<button id="add">
+				Add
+			</button>
+			<button id="empty">
+				Empty
+			</button>
+		</fieldset>	
+		</form>
+		
+		<div class="container">
+			<img src="imgs/img1.jpg" id="i1" alt="image1" />
+		</div>
+		<script type="text/javascript" src="js/funcsdom.js"></script>
+	</body>
+</html>
