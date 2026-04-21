@@ -11,7 +11,7 @@ function testingAdjacent(){
     parent.insertAdjacentHTML("beforebegin","<p>Testing insert adjacent HTML");
     parent.insertAdjacentHTML("afterbegin","<p>Testing insert adjacent HTML");
     parent.insertAdjacentHTML("beforeend","<p>Testing insert adjacent HTML");
-    parent.insertAdjacentHTML("afterend","<p>Testing insert adjacent HTML");
+    parent.insertAdjacentHTML("afterend","<p>Testing insert adjacent HTML</p>");
 }
 
 function testingAfterBefore(){
