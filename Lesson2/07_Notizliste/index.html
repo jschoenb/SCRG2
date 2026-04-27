@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizliste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Notizliste</h1>
+
+    <!-- Notizen-Formular -->
+    <div class="notes-form">
+        <input type="text" id="notesTitle" placeholder="Titel der Notiz" required/>
+        <textarea id="notesDescription" placeholder="Beschreibung (optional)"></textarea>
+        <button id="addNote">Hinzufügen</button>
+    </div>
+    <div class="actions">
+        <button id="showOpen">Offene anzeigen</button>
+        <button id="showAll">Alle anzeigen</button>
+    </div>
+
+    <!-- Notizliste -->
+    <ul id="notesList">
+        <!--<li class="note open">
+            <span>
+                <strong>Title?</strong> - Description?
+            </span>
+            <button class="toggleStatus">Schließen</button>
+        </li> -->
+    </ul>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
