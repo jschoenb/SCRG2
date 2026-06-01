@@ -6,6 +6,18 @@
 
 window.onload = function () {
     const list = document.querySelector("#notesList");
+    const showOpenButton = document.querySelector("#showOpen");
+    const showAllButton = document.querySelector("#showAll");
+
+    showAllButton.onclick = function () {
+        for(let note of list.children){
+            note.style.display = "flex";
+        }
+    }
+
+    showOpenButton.onclick = function () {
+        showOpen(list)
+    }
 
     list.onclick = function (e) {
         console.log(e.target);
@@ -14,9 +26,21 @@ window.onload = function () {
     }
 
     const addButton = document.querySelector("#addNote");
-
     addButton.onclick = function (e) {
         add(list);
+    }
+}
+
+function showOpen(list){
+    //const listNodes = list.querySelectorAll("li");
+    const listNodes = list.children
+    for(let note of listNodes){
+        note.style.display = note.classList.contains("open")?"flex":"none";
+        /*if(note.classList.contains("open")){
+            note.style.display = "flex";
+        } else {
+            note.style.display = "none";
+        }*/
     }
 }
 
