@@ -25,6 +25,27 @@ class PaintObj {
         this.div.style.left = this.posX+"px";
         this.div.style.backgroundColor = this.color;
         parent.appendChild(this.div);
+        this.setClickHandler();
+    }
+
+    deleteElement(div){
+        div.remove();
+    }
+
+    setClickHandler() {
+        console.log(this);
+        let that = this;
+        /*this.div.onclick = function() {
+            console.log(this);
+            console.log(that);
+            that.deleteElement(that.div);
+        }*/
+        this.div.onclick = (e)=>{ //arrow Fct
+            console.log(this);
+            this.deleteElement(this.div);
+            console.log(e);
+            e.stopPropagation();
+        }
     }
 
     getWidth() {
