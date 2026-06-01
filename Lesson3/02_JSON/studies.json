@@ -1,0 +1,8 @@
+{
+  "persons" : [
+    {"firstName" : "Max", "lastName" :  "Mustermann"},
+    {"firstName" : "Susi", "lastName" :  "Musterfrau"},
+    {"firstName" : "Franz", "lastName" :  "Maier"},
+    {"firstName" : "Ann", "lastName" :  "Huber"}
+  ]
+}
