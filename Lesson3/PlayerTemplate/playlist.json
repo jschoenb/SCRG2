@@ -1,0 +1,13 @@
+{
+  "name" : "MyPlaylist",
+  "elements" : [
+    {"type":"album", "id":"Album1", "title":"First Album", "interpret":"Interpret1",
+      "songs" :[
+        {"type":"song", "id":"Song1", "title":"Lied 1", "interpret":"Interpret1","duration":150},
+        {"type":"song", "id":"Song2", "title":"Lied 2", "interpret":"Interpret1","duration":150}
+      ]
+    },
+    {"type":"song","id":"Song3", "title":"Lied 3", "interpret":"Interpret2","duration":150}
+  ]
+}
+

@@ -1,0 +1,21 @@
+body{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+td{
+	border: 1px solid
+}
+
+#overview {
+	float: left;
+
+}
+
+#detailsTable {
+	margin-left: 350px;
+}
+
+#bug-form {
+	clear: left;
+	margin-top: 150px;
+}

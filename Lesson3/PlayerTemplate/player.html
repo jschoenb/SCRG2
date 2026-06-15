@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Player</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1>Music Player</h1>
+        <div id="overview">
+            <h2>Übersicht</h2>
+            <table>
+                <thead>
+                <th>Title</th><th>Interpret</th><th>Duration</th>
+                </thead>
+                <tbody id="playlist"></tbody>
+
+            </table>
+        </div>
+		<div id="detailsTable">
+            <h2>Details zu Album</h2>
+            <table>
+                <thead><th>Title</th><th>Interpret</th><th>Duration</th></thead>
+                <tbody id="details"></tbody>
+            </table>
+        </div>
+
+        <form id="bug-form">
+            <h2>Neuanlage</h2>
+            <hr />
+                <table>
+                    <tr>
+                        <td>Title:</td>
+                        <td><input type="text" id="title" value="Titel"/></td>
+                    </tr>
+                    <tr>
+                        <td>Interpret:</td>
+                        <td><input type="text" id="interpret" value="Interpret"/></td>
+                     </tr>
+                     <tr>
+                        <td>Duration:</td>
+                        <td><input type="text" id="duration" value="10"/></td>
+                    </tr>
+                    <tr>
+                        <td>Album:</td>
+                        <td><select id="albums"></select></td>
+                    </tr>
+                </table>   
+                <hr />
+                <input type="button" id="addSong" value="Add Song" />
+                <input type="button" id="addAlbum" value="Add Album" />
+                <input type="button" id="addSongToAlbum" value="Add Song to Album" />
+                <hr />
+            </form>
+        <script type="text/javascript" src="PieceOfMusic.js"></script>
+        <script type="text/javascript" src="Song.js"></script>
+        <script type="text/javascript" src="Album.js"></script>
+        <script type="text/javascript" src="Playlist.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+
